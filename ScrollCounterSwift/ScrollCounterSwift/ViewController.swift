@@ -45,9 +45,6 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if addNumberTimer != nil {
-            addNumberTimer = nil
-        }
         addNumberTimer = Timer.scheduledTimer(timeInterval: 1,
                                               target: self,
                                               selector: #selector(addRundomNumber(_:)),
@@ -63,11 +60,7 @@ class ViewController: UIViewController {
     @objc func addRundomNumber(_ timer: Timer?) {
         number += 500 + arc4random_uniform(3000)
         var tmpNumber = number
-        
-        if !Thread.isMainThread {
-            print("Not in MAIN Thread")
-        }
-        
+
         onesDigitView.scroll(toDigit: (tmpNumber % 10))
         tmpNumber = tmpNumber / 10
         tensDigitView.scroll(toDigit: (tmpNumber % 10))

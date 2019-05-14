@@ -9,15 +9,15 @@
 
 import UIKit
 
-enum DigitScrollStyle: Int {
-    case flick = 1
-    case spring = 2
+enum DigitScrollStyle {
+    case flick
+    case spring
 }
 
 class DigitView: UIView, UIScrollViewDelegate {
     private weak var scrollView: UIScrollView?
     private weak var digitsView: DigitContentView?
-    let scrollStyle: DigitScrollStyle = .flick
+    let scrollStyle: DigitScrollStyle = .spring
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
