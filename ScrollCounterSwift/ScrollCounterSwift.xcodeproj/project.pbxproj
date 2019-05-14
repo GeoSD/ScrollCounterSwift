@@ -12,6 +12,8 @@
 		66C08B79228AB84700D7688D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C08B77228AB84700D7688D /* Main.storyboard */; };
 		66C08B7B228AB84A00D7688D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66C08B7A228AB84A00D7688D /* Assets.xcassets */; };
 		66C08B7E228AB84A00D7688D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C08B7C228AB84A00D7688D /* LaunchScreen.storyboard */; };
+		66C08B86228ABE7600D7688D /* DigitContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C08B85228ABE7600D7688D /* DigitContentView.swift */; };
+		66C08B88228AC4FF00D7688D /* DigitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C08B87228AC4FF00D7688D /* DigitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		66C08B7A228AB84A00D7688D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66C08B7D228AB84A00D7688D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66C08B7F228AB84A00D7688D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C08B85228ABE7600D7688D /* DigitContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitContentView.swift; sourceTree = "<group>"; };
+		66C08B87228AC4FF00D7688D /* DigitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				66C08B73228AB84700D7688D /* AppDelegate.swift */,
 				66C08B75228AB84700D7688D /* ViewController.swift */,
+				66C08B85228ABE7600D7688D /* DigitContentView.swift */,
+				66C08B87228AC4FF00D7688D /* DigitView.swift */,
 				66C08B77228AB84700D7688D /* Main.storyboard */,
 				66C08B7A228AB84A00D7688D /* Assets.xcassets */,
 				66C08B7C228AB84A00D7688D /* LaunchScreen.storyboard */,
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				66C08B76228AB84700D7688D /* ViewController.swift in Sources */,
+				66C08B86228ABE7600D7688D /* DigitContentView.swift in Sources */,
+				66C08B88228AC4FF00D7688D /* DigitView.swift in Sources */,
 				66C08B74228AB84700D7688D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

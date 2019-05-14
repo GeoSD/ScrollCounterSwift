@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,13 +13,75 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollCounterSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NCn-JU-VQs">
+                                <rect key="frame" x="44" y="139" width="808" height="115"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rNn-1Q-1oL" customClass="DigitView" customModule="ScrollCounterSwift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="115"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="93R-MM-vv7" customClass="DigitView" customModule="ScrollCounterSwift" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="0.0" width="89.5" height="115"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEC-NR-qwO" customClass="DigitView" customModule="ScrollCounterSwift" customModuleProvider="target">
+                                        <rect key="frame" x="179.5" y="0.0" width="90" height="115"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abq-wo-Xeg" customClass="DigitView" customModule="ScrollCounterSwift" customModuleProvider="target">
+                                        <rect key="frame" x="269.5" y="0.0" width="89.5" height="115"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xws-ei-Yna" customClass="DigitView" customModule="ScrollCounterSwift" customModuleProvider="target">
+                                        <rect key="frame" x="359" y="0.0" width="90" height="115"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pie-cT-Lk3" customClass="DigitView" customModule="ScrollCounterSwift" customModuleProvider="target">
+                                        <rect key="frame" x="449" y="0.0" width="89.5" height="115"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gb5-5G-zUL" customClass="DigitView" customModule="ScrollCounterSwift" customModuleProvider="target">
+                                        <rect key="frame" x="538.5" y="0.0" width="90" height="115"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5f-xZ-AK5" customClass="DigitView" customModule="ScrollCounterSwift" customModuleProvider="target">
+                                        <rect key="frame" x="628.5" y="0.0" width="89.5" height="115"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEP-yf-TCX" customClass="DigitView" customModule="ScrollCounterSwift" customModuleProvider="target">
+                                        <rect key="frame" x="718" y="0.0" width="90" height="115"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NCn-JU-VQs" secondAttribute="height" multiplier="7:1" id="1cV-og-dmM"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NCn-JU-VQs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QbB-TK-Oj0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NCn-JU-VQs" secondAttribute="trailing" id="qIG-NU-NTr"/>
+                            <constraint firstItem="NCn-JU-VQs" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="yBZ-72-e2Y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hundredMillionsDigitView" destination="rNn-1Q-1oL" id="bai-EH-vAH"/>
+                        <outlet property="hundredThousandsDigitView" destination="abq-wo-Xeg" id="xjY-co-OFo"/>
+                        <outlet property="hundredsDigitView" destination="gb5-5G-zUL" id="Fyg-Z2-4UZ"/>
+                        <outlet property="oneMillionsDigitView" destination="JEC-NR-qwO" id="IoP-9x-eDO"/>
+                        <outlet property="oneThousandsDigitView" destination="Pie-cT-Lk3" id="Jm9-6V-15t"/>
+                        <outlet property="onesDigitView" destination="YEP-yf-TCX" id="Xh1-Vl-sKM"/>
+                        <outlet property="tenMillionsDigitView" destination="93R-MM-vv7" id="zBj-hh-BRG"/>
+                        <outlet property="tenThousandsDigitView" destination="Xws-ei-Yna" id="lKT-1f-7Xt"/>
+                        <outlet property="tensDigitView" destination="E5f-xZ-AK5" id="DdC-Oy-V6d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
